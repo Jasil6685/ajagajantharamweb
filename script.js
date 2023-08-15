@@ -128,7 +128,7 @@ var byeResponses = [
 ];
 
 var muthuResponses = [
-  "muthu is ediot",
+  "muthu is idiot",
 ];
 var notSureResponses = [
   "I'm not quite sure how to respond to that.<br><br><u>please ask me questions like:-</u><br>I need create crypto airdrop <br>Some words about blockchain <br>How create website<br>etc.... ",
@@ -259,6 +259,10 @@ var relationshipAdvice = [
   "Keep the romance alive by planning surprise dates and spending quality time together."
 ];
 
+var zahidpp = [
+  "jasil's friend zahid",
+];
+
 var programmingTips = [
   "Practice coding regularly to improve your programming skills.",
   "Always comment your code for better readability and collaboration.",
@@ -328,7 +332,7 @@ function generateBotResponse(userInput) {
   var botResponse = "";
 
   var questionPatterns = [
-    { pattern: /(hi|hello|hey|whats up)/i, responses: helloResponses },
+    { pattern: /(hi|hello|hlo|hey|whats up)/i, responses: helloResponses },
     { pattern: /how are you|what you do/i, responses: howAreYouResponses },
     { pattern: /what's your name|name/i, responses: nameResponses },
     { pattern: /bye|see you/i, responses: byeResponses },
@@ -357,7 +361,8 @@ function generateBotResponse(userInput) {
     { pattern: /(jasil|ceo|owner|jasi|jasilp)/i, responses: jasilInfo },
     { pattern: /website/i, responses: websiteDevInfo },
     { pattern: /NFT|NFTS/i, responses: nftExplanation},
-    { pattern: /Musthafa|muthu/i, responses: muthuResponses},
+    { pattern: /zahid|manuppa|sahid/i, responses: zahidpp},
+    { pattern: /Musthafa|muthu/i, responses: muthuResponses}, 
     // Add more question patterns and responses here
   ]; 
 
