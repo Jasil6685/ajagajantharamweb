@@ -259,7 +259,7 @@ var relationshipAdvice = [
   "Keep the romance alive by planning surprise dates and spending quality time together."
 ];
 
-var zahidpp = [
+var sahidResponses = [
   "jasil's friend zahid",
 ];
 
@@ -332,11 +332,11 @@ function generateBotResponse(userInput) {
   var botResponse = "";
 
   var questionPatterns = [
-    { pattern: /(hi|hello|hlo|hey|whats up)/i, responses: helloResponses },
-    { pattern: /how are you|what you do/i, responses: howAreYouResponses },
-    { pattern: /what's your name|name/i, responses: nameResponses },
-    { pattern: /bye|see you/i, responses: byeResponses },
-    { pattern: /thank you|thanks/i, responses: thankYouResponses },
+    { pattern: /(hi|hello|hey|whats up)/i, responses: helloResponses },
+    { pattern: /(how are you|what you do)/i, responses: howAreYouResponses },
+    { pattern: /(what's your name|name)/i, responses: nameResponses },
+    { pattern: /(bye|see you)/i, responses: byeResponses },
+    { pattern: /(thank you|thanks)/i, responses: thankYouResponses },
     { pattern: /joke/i, responses: jokeResponses },
     { pattern: /music/i, responses: musicRecommendations },
     { pattern: /movie/i, responses: movieRecommendations },
@@ -350,9 +350,9 @@ function generateBotResponse(userInput) {
     { pattern: /travel/i, responses: travelDestinations },
     { pattern: /pet/i, responses: petAdvice },
     { pattern: /productivity/i, responses: productivityTips },
-    { pattern: /programming|coding/i, responses: programmingTips },
+    { pattern: /(programming|coding)/i, responses: programmingTips },
     { pattern: /blockchain/i, responses: blockchainInfo },
-    { pattern: /crypto airdrop|airdrop/i, responses: cryptoAirdropInfo },
+    { pattern: /(crypto airdrop|airdrop)/i, responses: cryptoAirdropInfo },
     { pattern: /hobby/i, responses: hobbyIdeas },
     { pattern: /relationship/i, responses: relationshipAdvice },
     { pattern: /(telegram bot|bot|bot on telegram)/i, responses: telegramBotInfo },
@@ -360,9 +360,9 @@ function generateBotResponse(userInput) {
     { pattern: /(jaskom|jsk)/i, responses: jaskomInfo },
     { pattern: /(jasil|ceo|owner|jasi|jasilp)/i, responses: jasilInfo },
     { pattern: /website/i, responses: websiteDevInfo },
-    { pattern: /NFT|NFTS/i, responses: nftExplanation},
-    { pattern: /zahid|manuppa|sahid/i, responses: zahidpp},
-    { pattern: /Musthafa|muthu/i, responses: muthuResponses}, 
+    { pattern: /(NFT|NFTS)/i, responses: nftExplanation},
+    { pattern: /(Musthafa|muthu)/i, responses: muthuResponses},
+     { pattern: /(zahid|sahid|manuppa)/i, responses: sahidResponses},
     // Add more question patterns and responses here
   ]; 
 
