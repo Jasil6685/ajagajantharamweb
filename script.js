@@ -130,6 +130,10 @@ var byeResponses = [
 var muthuResponses = [
   "muthu is idiot",
 ];
+var arshuResponses = [
+  "arshad is professional football player and singer",
+];
+
 var notSureResponses = [
   "I'm not quite sure how to respond to that.<br><br><u>please ask me questions like:-</u><br>I need create crypto airdrop <br>Some words about blockchain <br>How create website<br>etc.... ",
   "I'm sorry, I can't provide a relevant response for that. <br><br><u>please ask me questions like:-</u><br>I need create crypto airdrop , What i do ?<br>Some words about blockchain <br>How create website<br>etc.... ",
@@ -362,6 +366,8 @@ function generateBotResponse(userInput) {
     { pattern: /website/i, responses: websiteDevInfo },
     { pattern: /(NFT|NFTS)/i, responses: nftExplanation},
     { pattern: /(Musthafa|muthu)/i, responses: muthuResponses},
+    { pattern: /(arshad|arshu)/i, responses: arshuResponses},
+   
      { pattern: /(zahid|sahid|manuppa)/i, responses: sahidResponses},
     // Add more question patterns and responses here
   ]; 
