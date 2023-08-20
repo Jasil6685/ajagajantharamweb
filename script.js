@@ -332,6 +332,39 @@ var nftExplanation = [
   "NFTs have gained popularity in art, gaming, and collectibles.",
 ];
 
+
+var goodResponses = [
+  "That's wonderful to hear!",
+  "I'm glad things are going well for you!",
+  "It's great to know that!",
+  "That's fantastic news!",
+  "I'm happy for you!",
+  "That's really nice!",
+  "I'm pleased to hear that!",
+  "That's good to know!",
+  "I'm excited for you!",
+  "That's a positive update!",
+  
+  ];
+  
+  var okayResponses = [
+    "Gotcha!",
+    "Roger that.",
+    "I'm with you.",
+    "Absolutely.",
+    "I comprehend.",
+    "Affirmative.",
+    "Copy that.",
+    "Yup, I hear you.",
+    "Indeed.",
+    "Yep, got it.",
+    
+    ];
+    
+    var contactResponses = [
+      "Of course, select the contact(email) section on this website or Telegram ,As per your convenience .thanks" ,
+      ];
+
 function generateBotResponse(userInput) {
   var botResponse = "";
 
@@ -367,8 +400,10 @@ function generateBotResponse(userInput) {
     { pattern: /(NFT|NFTS)/i, responses: nftExplanation},
     { pattern: /(Musthafa|muthu)/i, responses: muthuResponses},
     { pattern: /(arshad|arshu)/i, responses: arshuResponses},
-   
-     { pattern: /(zahid|sahid|manuppa)/i, responses: sahidResponses},
+    { pattern: /(zahid|sahid|manuppa)/i, responses: sahidResponses},
+    { pattern: /(okay|ok|hmm|mm|oky|done)/i, responses: okayResponses},
+    { pattern: /(nice|good|doing well)/i, responses: goodResponses},
+    { pattern: /(contact|support|help|touch|error|report|complaint)/i, responses: contactResponses},
     // Add more question patterns and responses here
   ]; 
 
